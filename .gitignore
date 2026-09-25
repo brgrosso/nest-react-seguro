@@ -1,0 +1,10 @@
+node_modules
+dist
+*.local
+.DS_Store
+.env
+*.db
+*.db-journal
+.vite
+tsconfig.tsbuildinfo
+api/src/generated
