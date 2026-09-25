@@ -1,0 +1,23 @@
+services:
+  api:
+    build: ./api
+    environment:
+      PORT: "3002"
+      NODE_ENV: production
+      WEB_ORIGIN: http://localhost:8080
+      COOKIE_SECURE: "false"
+      JWT_ACCESS_SECRET: ${JWT_ACCESS_SECRET:-cambiar-access-en-compose}
+      JWT_REFRESH_SECRET: ${JWT_REFRESH_SECRET:-cambiar-refresh-en-compose}
+      DATABASE_URL: file:/data/dev.db
+    volumes:
+      - api-data:/data
+
+  web:
+    build: ./web
+    ports:
+      - "8080:80"
+    depends_on:
+      - api
+
+volumes:
+  api-data:
