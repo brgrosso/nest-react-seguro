@@ -1,0 +1,135 @@
+:root {
+  font-family: system-ui, "Segoe UI", Roboto, sans-serif;
+  color: #1b1f1c;
+  background: #eef2ef;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+h1,
+h2,
+h3,
+p {
+  margin: 0;
+}
+
+a {
+  color: #1f4d3a;
+}
+
+.shell {
+  min-height: 100svh;
+}
+
+.topbar {
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+  align-items: flex-end;
+  padding: 24px 28px 16px;
+  border-bottom: 1px solid #d5ddd8;
+}
+
+.eyebrow {
+  font-size: 12px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #5c665f;
+}
+
+.topbar h1 {
+  font-size: 26px;
+}
+
+nav {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+
+.nav-link,
+.link-btn {
+  color: #334038;
+  text-decoration: none;
+  background: none;
+  border: 0;
+  padding: 8px 12px;
+  border-radius: 999px;
+  font: inherit;
+  cursor: pointer;
+}
+
+.nav-link.active {
+  background: #1f4d3a;
+  color: #fff;
+}
+
+.page {
+  padding: 28px;
+  display: grid;
+  gap: 14px;
+  max-width: 860px;
+}
+
+.card {
+  display: grid;
+  gap: 12px;
+  background: #fff;
+  border: 1px solid #d5ddd8;
+  border-radius: 12px;
+  padding: 20px;
+}
+
+label {
+  display: grid;
+  gap: 6px;
+  font-size: 14px;
+}
+
+input {
+  padding: 10px 12px;
+  border: 1px solid #c5cec8;
+  border-radius: 8px;
+  font: inherit;
+}
+
+button[type="submit"] {
+  background: #1f4d3a;
+  color: #fff;
+  border: 0;
+  border-radius: 8px;
+  padding: 10px 14px;
+  font: inherit;
+  cursor: pointer;
+}
+
+.notes {
+  display: grid;
+  gap: 8px;
+  padding-left: 18px;
+  color: #334038;
+}
+
+.error {
+  color: #8b1e1e;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background: #fff;
+}
+
+th,
+td {
+  text-align: left;
+  padding: 8px 10px;
+  border-bottom: 1px solid #d5ddd8;
+  font-size: 14px;
+}
